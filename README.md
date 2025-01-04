@@ -55,6 +55,8 @@ This library has been tested with the following boards and cores:
 | Arduino UNO R3 SMD          | **Arduino AVR Boards** by Arduino `1.8.6`                            | Yes      |
 | Arduino UNO R4 Minima       | **Arduino UNO R4 Boards** by Arduino `1.3.2`                         | Yes      |
 | Arduino UNO R4 WiFi         | **Arduino UNO R4 Boards** by Arduino `1.3.2`                         | Yes      |
+| ST NUCLEO-F103RB            | **STM32 MCU based boards** by STMicroelectronics `2.9.0`             | Yes      |
+| ST NUCLEO-F411RE            | **STM32 MCU based boards** by STMicroelectronics `2.9.0`             | Yes      |
 
 [^1]: **Arduino Make Your UNO**  
 The example program does not work with this board when connected to a computer via USB.
@@ -62,7 +64,7 @@ However, it does work when it is powered through the barrel jack.
 
 [^2]: **Arduino Nano RP2040 Connect**  
 This board has trouble receiving Modbus messages when using the `Arduino Mbed OS Nano Boards` core by Arduino.  
-It seems that there is some sort of timing issue.
+It seems that there is some issue with how the timing of `Serial.read()` works with this core.
 
 
 
